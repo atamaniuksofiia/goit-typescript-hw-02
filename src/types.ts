@@ -4,7 +4,7 @@ export interface ImageData {
     small: string;
     full: string;
   };
-  alt_description: string | undefined; // Використовуємо undefined, щоб уникнути конфліктів з null
+  alt_description: string | undefined;
 }
 
 export interface SearchImagesResponse {

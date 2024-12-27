@@ -7,11 +7,11 @@ import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "./components/ImageModal/ImageModal";
 import { searchImages } from "./services/api";
-import { SearchImagesResponse, ImageData } from "./types"; // Імпортуємо типи з types.ts
+import { SearchImagesResponse, ImageData } from "./types";
 
 const App: React.FC = () => {
   const [query, setQuery] = useState<string>("");
-  const [images, setImages] = useState<ImageData[]>([]); // Використовуємо спільний тип
+  const [images, setImages] = useState<ImageData[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [page, setPage] = useState<number>(1);

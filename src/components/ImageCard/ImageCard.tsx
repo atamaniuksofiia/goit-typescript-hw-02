@@ -1,15 +1,8 @@
 import React from "react";
-
-interface Image {
-  urls: {
-    small: string;
-    full: string;
-  };
-  alt_description?: string;
-}
+import { ImageData } from "../../types";
 
 interface ImageCardProps {
-  image: Image;
+  image: ImageData;
   onImageClick: (imageSrc: string, imageAlt: string) => void;
 }
 

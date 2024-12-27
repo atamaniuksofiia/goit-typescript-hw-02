@@ -1,18 +1,10 @@
 import React from "react";
 import ImageCard from "../ImageCard/ImageCard";
 import s from "./ImageGallery.module.css";
-
-interface Image {
-  id: string;
-  urls: {
-    small: string;
-    full: string;
-  };
-  alt_description?: string;
-}
+import { ImageData } from "../../types";
 
 interface ImageGalleryProps {
-  images: Image[];
+  images: ImageData[];
   onImageClick: (imageSrc: string, imageAlt: string) => void;
 }
 
